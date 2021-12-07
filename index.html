@@ -25,51 +25,70 @@
   </head>
   <body>
     <main>
-      <img class="background" src="./images/bg-desktop.png" />
-      <section id="left">
-        <img id="logo" src="./images/logo.svg" alt="logo" />
-        <div id="icons">
-          <div class="icon-wrapper">
-            <img
-              class="icon"
-              src="./images/icon-document.svg"
-              alt="file icon"
-            />
+      <!-- <img class="background" src="./images/bg-desktop.png" /> -->
+      <div class="background"></div>
+      <div id="container">
+        <section id="left">
+          <img id="logo" src="./images/logo.svg" alt="logo" />
+          <div id="icons">
+            <div class="icon-wrapper">
+              <img
+                class="icon"
+                src="./images/icon-document.svg"
+                alt="file icon"
+              />
+            </div>
+            <div class="icon-wrapper">
+              <img
+                class="icon"
+                src="./images/icon-folder.svg"
+                alt="folder icon"
+              />
+            </div>
+            <div class="icon-wrapper">
+              <img
+                class="icon"
+                src="./images/icon-upload.svg"
+                alt="upload icon"
+              />
+            </div>
           </div>
-          <div class="icon-wrapper">
-            <img
-              class="icon"
-              src="./images/icon-folder.svg"
-              alt="folder icon"
-            />
-          </div>
-          <div class="icon-wrapper">
-            <img
-              class="icon"
-              src="./images/icon-upload.svg"
-              alt="upload icon"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="right">
-        <div>You’ve used 815 GB of your storage</div>
-        <div>185 GB Left</div>
-        <div class="progress-bar">
-          <div id="progress"></div>
-          <div id="full-bar"></div>
-        </div>
-        <div>0 GB</div>
-        <div>1000 GB</div>
-
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
-        </div>
-      </section>
+        <section id="right">
+          <div class="storage-used">
+            You’ve used<span class="bolded-text"
+              ><span class="digit-2">8</span><span class="digit-1">1</span
+              ><span class="digit-3">5</span> GB</span
+            >of your storage
+          </div>
+          <div id="storage-left-wrapper">
+            <div class="storage-left">
+              <span id="bubble-gb" class="bolded-text"
+                ><span class="digit-1">1</span><span class="digit-2">8</span
+                ><span class="digit-3">5</span>
+              </span>
+              <span class="small-text">GB Left</span>
+            </div>
+          </div>
+          <div class="triangle"></div>
+          <div class="progress-bar">
+            <div id="progress"><div id="bar-ball"></div></div>
+          </div>
+          <div class="min-max-storage">
+            <div>0 GB</div>
+            <div>1000 GB</div>
+          </div>
+          <div id="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">David Andrea</a>.
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
