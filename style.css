@@ -229,7 +229,7 @@ I began with classes to reuse code, but ended up switching to id's.  */
   #storage-left-wrapper {
     align-self: center;
     margin: 0;
-    margin-top: 80px;
+    margin-top: 160px;
     transform: scale(1.3);
   }
 
