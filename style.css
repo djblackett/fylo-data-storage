@@ -2,9 +2,10 @@ body {
   height: 100vh;
   margin: 0;
   background-color: hsl(229, 57%, 11%);
-  font-family: "Outfit", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: hsl(243, 100%, 93%);
   font-size: 14px;
+  font-weight: 400;
 }
 
 main {
@@ -132,15 +133,31 @@ main {
   margin: 10px;
 }
 
+/* These digit alignments were a nightmare, so please excuse the stupid naming scheme
+I began with classes to reuse code, but ended up switching to id's.  */
 .digit-1 {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-/* .digit-2 {
-} */
+.digit-2 {
+  font-size: 20px;
+}
 
 .digit-3 {
-  vertical-align: sub;
+  vertical-align: bottom;
+}
+
+#digit-1 {
+  font-size: 11px;
+}
+#digit-2-used {
+  font-size: 12px;
+}
+
+#digit-3 {
+  font-size: 12px;
+  vertical-align: bottom;
 }
 
 .triangle {
@@ -155,7 +172,7 @@ main {
 }
 
 .bolded-text {
-  font-weight: 700;
+  font-weight: bolder;
   margin: 5px;
 }
 
@@ -230,6 +247,7 @@ main {
   }
 
   #attribution {
-    display: none;
+    /* position: absolute; */
+    transform: translateY(180px);
   }
 }
